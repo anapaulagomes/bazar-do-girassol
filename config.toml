@@ -1,0 +1,33 @@
+baseURL = "https://www.bazardogirassol.com.br/"
+languageCode = "pt-br"
+title = "Bazar do Girassol"
+theme = "hugo-creative-portfolio-theme"
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "Describe your website"
+  copyright = "&copy;2020 Bazar do Girassol"
+  sidebarAbout = [
+    "Uma forma de ajudar pessoas, assim como fez nosso girassol Camila Moraes. 🌻",
+    "Camila lutou bravamente contra o câncer, partindo em 5 de Julho de 2020.",
+    "Todo o dinheiro arrecadado será revertido em doações para instituições de apoio a pessoas com câncer."
+  ]
+
+  [[params.navlinks]]
+  name = "Início"
+  url = "bazar/"
+  home = true
+
+  [[params.navlinks]]
+  name = "Sobre"
+  url = "sobre/"
+
+  [[params.navlinks]]
+  name = "Textos de Mila"
+  url = "textos-de-mila/"
+
+  [params.social]
+  instagram     = "https://www.instagram.com/bazardogirassol_"
+  github        = "full profile url in github"
