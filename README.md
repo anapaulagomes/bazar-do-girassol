@@ -2,7 +2,7 @@
 
 ![Test & Build](https://github.com/anapaulagomes/bazar-do-girassol/workflows/Test%20&%20Build/badge.svg)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/26956720-f3cf-4452-8e3b-2489eed46c0e/deploy-status)](https://app.netlify.com/sites/bazardogirassol/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ec04e017-d6ee-41ff-a6e2-496d6a16bcdb/deploy-status)](https://app.netlify.com/sites/bazardogirassol/deploys)
 
 ## Desenvolvimento
 
