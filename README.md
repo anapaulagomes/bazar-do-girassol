@@ -12,6 +12,12 @@ Para executar o site, você precisará ter o [Hugo](https://gohugo.io/) instalad
 hugo server
 ```
 
+### Dados
+
+`SHEET_URL` = url de acesso ao CSV
+
+Para ignorar o cache de download dos dados, rode o servidor com `hugo server --ignoreCache`
+
 ### Theme
 
 ```
