@@ -7,7 +7,7 @@ theme = "hugo-creative-portfolio-theme"
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "default"
-  description = "Describe your website"
+  description = "Bazar do Girassol - venda dos itens de Camila em prol de instituições de apoio a pessoas com câncer"
   copyright = "&copy;2020 Bazar do Girassol"
   sidebarAbout = [
     "Uma forma de ajudar pessoas, assim como fez nosso girassol Camila Moraes. 🌻",
@@ -30,4 +30,4 @@ theme = "hugo-creative-portfolio-theme"
 
   [params.social]
   instagram     = "https://www.instagram.com/bazardogirassol_"
-  github        = "full profile url in github"
+  github        = "https://github.com/anapaulagomes/bazar-do-girassol"
