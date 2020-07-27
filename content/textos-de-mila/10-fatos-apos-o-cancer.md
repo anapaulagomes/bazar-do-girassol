@@ -1,6 +1,6 @@
 ---
 title: "10 fatos após o câncer"
-date: 2019-08-05T07:56:17+02:00
+date: 2019-12-14T07:56:17+02:00
 draft: false
 image: "img/textos-de-mila/10-fatos-apos-o-cancer.png"
 showonlyimage: false
@@ -9,7 +9,7 @@ weight: 0
 
 <!--more-->
 
-Por Camila Moraes
+**Por Camila Moraes**
 
 1. Uma das frases que eu mais ouço: Eu acho melhor você não fazer isso! / ou Eu acho melhor não!🙄
 2. Andar na rua é ter a certeza de receber olhares diferentes e as vezes até ser importunada com perguntas indiscretas;
