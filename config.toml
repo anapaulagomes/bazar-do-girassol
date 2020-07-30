@@ -30,4 +30,5 @@ theme = "hugo-creative-portfolio-theme"
 
   [params.social]
   instagram     = "https://www.instagram.com/bazardogirassol_"
+  whatsapp      = "https://wa.me/message/D4OXL6M6LH5ZD1"
   github        = "https://github.com/anapaulagomes/bazar-do-girassol"
