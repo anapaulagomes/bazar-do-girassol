@@ -1,80 +1,85 @@
 {{ define "main" }}
 <div class="col-xs-12 col-sm-8 col-md-9 content-column">
-    {{ partial "mobile_nav_toggle.html" . }}
-    <div class="grid">
+  {{ partial "mobile_nav_toggle.html" . }}
+  <div class="grid">
 
-      {{ range .Data.Pages }}
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-          <div class="box-masonry">
-              {{ if and (isset .Params "image") .Params.image }}
-                {{ if eq .Params.showonlyimage true }}
-                <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
-                {{ else }}
-                <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-                {{ end }}
-                    <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
-                </a>
+    {{ range .Data.Pages }}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+      <div class="box-masonry">
+        {{ if and (isset .Params "image") .Params.image }}
+        {{ if eq .Params.showonlyimage true }}
+        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+          {{ else }}
+          <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+            {{ end }}
+            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+          </a>
+          {{ end }}
+          {{ if eq .Params.showonlyimage true }}
+          <div class="box-masonry-hover-text-header">
+            {{ else }}
+            <div class="box-masonry-text">
               {{ end }}
-              {{ if eq .Params.showonlyimage true }}
-              <div class="box-masonry-hover-text-header">
-              {{ else }}
-              <div class="box-masonry-text">
-              {{ end }}
-                  <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                  <div class="box-masonry-description">
-                    <p>
-                        {{ if .Description }}
-                          {{ .Description }}
-                        {{ else }}
-                          {{ .Summary }}
-                        {{ end }}
-                    </p>
-                  </div>
+              <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+              <div class="box-masonry-description">
+                <p>
+                  {{ if .Description }}
+                  {{ .Description }}
+                  {{ else }}
+                  {{ .Summary }}
+                  {{ end }}
+                </p>
               </div>
+            </div>
           </div>
       </div>
       {{ end }}
 
       {{ $url := getenv "SHEET_URL" }}
 
-        <div class="row">
-          {{ range $i, $row := getCSV "," $url }}
-            {{ if ne $i 0 }}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                <div class="box-masonry">
-                  {{ $item := index $row 0 }}
-                  {{ $estado := index $row 1 }}
-                  {{ $tempo_de_uso := index $row 2 }}
-                  {{ $preco := index $row 3 }}
-                  {{ $vendido := index $row 4 }}
-                  {{ $observacoes := index $row 5 }}
-                  {{ $imagem_capa := index $row 6 }}
-                  {{ $instagram := index $row 7 }}
-                  {{ if $imagem_capa }}
-                    <a href="{{ $instagram }}" title="{{ $item }}" class="box-masonry-image with-hover-overlay with-hover-icon">
-                        <img src="{{ $imagem_capa }}" alt="{{ $item }}" class="img-responsive">
-                    </a>
-                  {{ end }}
-                    
-                    <div class="box-masonry-text">
-                      <h4><a href="{{ $instagram }}">{{ $item }}</a></h4>
-                      <div class="box-masonry-description">
-                        <p>
-                          {{ $vendido }}
-                          {{ $estado }}
-                          {{ $tempo_de_uso }}
-                          {{ $preco }}
-                          {{ $observacoes }}
-                        </p>
-                      </div>
-                    </div>
-                </div>
-              {{ end }}
-          </div>
-          
-          {{ end }}
+      <div class="row">
+        {{ range $i, $row := getCSV "," $url }}
+        {{ if ne $i 0 }}
+        {{ $vendido := index $row 4 }}
+        {{ if ne $vendido "SIM" }}
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+          <div class="box-masonry">
+            {{ $item := index $row 0 }}
+            {{ $estado := index $row 1 }}
+            {{ $tempo_de_uso := index $row 2 }}
+            {{ $preco := index $row 3 }}
 
+            {{ $observacoes := index $row 5 }}
+            {{ $imagem_capa := index $row 6 }}
+            {{ $instagram := index $row 7 }}
+            {{ if $imagem_capa }}
+            <a href="{{ $instagram }}" title="{{ $item }}" class="box-masonry-image with-hover-overlay with-hover-icon">
+              <img src="{{ $imagem_capa }}" alt="{{ $item }}" class="img-responsive">
+            </a>
+            {{ end }}
+
+            <div class="box-masonry-text">
+              <h4><a href="{{ $instagram }}">{{ $item }}</a></h4>
+              <h6>R$ {{ $preco }}</h6>
+              <div class="box-masonry-description">
+                {{ if eq $estado "USADO" }}
+                  <p>{{ $estado }} ({{ $tempo_de_uso }}) {{ $observacoes }}</p>
+                {{ else }}
+                  <p>{{ $estado }} {{ $observacoes }}</p>
+                {{ end }}
+              </div>
+
+              <div class="side-by-side">
+                <a href="https://web.whatsapp.com/send?phone=557583216629&text=Tenho interesse: {{ $item }}">Quero!</a>
+              </div>
+            </div>
+          </div>
+          {{ end }}
         </div>
+        {{ end }}
+        {{ end }}
+
+      </div>
     </div>
-</div>
-{{ end }}
+  </div>
+  {{ end }}
