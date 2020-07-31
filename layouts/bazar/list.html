@@ -40,18 +40,18 @@
       <div class="row">
         {{ range $i, $row := getCSV "," $url }}
         {{ if ne $i 0 }}
-        {{ $status := index $row 4 }}
+        {{ $status := index $row 5 }}
         {{ if ne $status "VENDIDO" }}
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
           <div class="box-masonry">
-            {{ $item := index $row 0 }}
-            {{ $estado := index $row 1 }}
-            {{ $tempo_de_uso := index $row 2 }}
-            {{ $preco := index $row 3 }}
+            {{ $item := index $row 1 }}
+            {{ $estado := index $row 2 }}
+            {{ $tempo_de_uso := index $row 3 }}
+            {{ $preco := index $row 4 }}
 
-            {{ $observacoes := index $row 5 }}
-            {{ $imagem_capa := index $row 6 }}
-            {{ $instagram := index $row 7 }}
+            {{ $observacoes := index $row 6 }}
+            {{ $imagem_capa := index $row 7 }}
+            {{ $instagram := index $row 8 }}
             {{ if $imagem_capa }}
             <a href="{{ $instagram }}" title="{{ $item }}" class="box-masonry-image with-hover-overlay with-hover-icon">
               <img src="{{ $imagem_capa }}" alt="{{ $item }}" class="img-responsive">
