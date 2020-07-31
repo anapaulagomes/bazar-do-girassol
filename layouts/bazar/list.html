@@ -37,11 +37,11 @@
 
       {{ $url := getenv "SHEET_URL" }}
 
+      {{ range $i, $row := getCSV "," $url }}
+      {{ if ne $i 0 }}
+      {{ $status := index $row 5 }}
+      {{ if eq $status "DISPONÍVEL" }}
       <div class="row">
-        {{ range $i, $row := getCSV "," $url }}
-        {{ if ne $i 0 }}
-        {{ $status := index $row 5 }}
-        {{ if ne $status "VENDIDO" }}
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
           <div class="box-masonry">
             {{ $item := index $row 1 }}
@@ -63,9 +63,9 @@
               <h6>R$ {{ $preco }}</h6>
               <div class="box-masonry-description">
                 {{ if eq $estado "USADO" }}
-                  <p>{{ $estado }} ({{ $tempo_de_uso }}) {{ $observacoes }}</p>
+                <p>{{ $estado }} Tempo de uso: {{ $tempo_de_uso }}. {{ $observacoes }}</p>
                 {{ else }}
-                  <p>{{ $estado }} {{ $observacoes }}</p>
+                <p>{{ $estado }} {{ $observacoes }}</p>
                 {{ end }}
               </div>
 
@@ -74,8 +74,9 @@
               </div>
             </div>
           </div>
-          {{ end }}
         </div>
+        {{ end }}
+
         {{ end }}
         {{ end }}
 
