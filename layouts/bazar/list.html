@@ -40,8 +40,8 @@
       <div class="row">
         {{ range $i, $row := getCSV "," $url }}
         {{ if ne $i 0 }}
-        {{ $vendido := index $row 4 }}
-        {{ if ne $vendido "SIM" }}
+        {{ $status := index $row 4 }}
+        {{ if ne $status "VENDIDO" }}
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
           <div class="box-masonry">
             {{ $item := index $row 0 }}
