@@ -12,5 +12,3 @@ Você pode retirar o item ou doá-lo para a instituição de apoio ao câncer qu
 Saiba mais aqui.
 
 <!--more-->
-
-![Logo do bazar](/img/logo.png)
