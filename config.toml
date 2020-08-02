@@ -25,6 +25,10 @@ theme = "hugo-creative-portfolio-theme"
   url = "sobre/"
 
   [[params.navlinks]]
+  name = "Instituições Apoiadas"
+  url = "instituicoes-apoiadas/"
+
+  [[params.navlinks]]
   name = "Textos de Mila"
   url = "textos-de-mila/"
 
