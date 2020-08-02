@@ -19,7 +19,7 @@ indicaram fazer uma USG para saber do que se tratava. Quando fiz a USG fui aleta
 se tratava de um nódulo bastante vascularizado e que eu deveria procurar um especialista em cirurgia oncológica
 para fazer uma investigação mais detalhada. Nesse meio período o nódulo já tinha crescido bastante e se tornado
 visível. Fui agraciada por uma indicação de um cirurgião oncológico, onde cheguei no lugar onde hoje faço meu
-tratamento no GBo - Grupo Baiano de Oncologia. Costumo dizer que Deus sempre sabe o que faz e não foi diferente
+tratamento no GBO - Grupo Baiano de Oncologia. Costumo dizer que Deus sempre sabe o que faz e não foi diferente
 nessa fase da minha vida, pois fui agraciada com médicos maravilhosos e por esse lugar que eu me sinto extremamente
 a vontade e acolhida. Meu primeiro contato com Dr. Ramiro Martins ele já me aletou o que estaria por vir,
 até então não contei nada a ninguém da família e amigos. Fiz todos exames que foi passado e depois de algumas

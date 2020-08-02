@@ -18,8 +18,11 @@ Nosso girassol hoje está como sempre esteve em vida, de costas para o escuro e 
 
 Sejam bem vindxs ao [Bazar do Girassol]({{< ref "bazar" >}})!
 
+Você pode entrar em contato conosco pelo [WhatsApp](https://web.whatsapp.com/send?phone=557583216629)
+ou pelo [Instagram](https://www.instagram.com/bazardogirassol_).
+
 ---
 
 A marca do Bazar do Girassol foi doada pelo talentoso Gabriel Almeida.
 Conheça o trabalho do Gabriel em seu [Behance](https://www.behance.net/gabrielalmeidadsg)
-e [Instagram](https://www.instagram.com/gabrielalmeidadsg/)
+e [Instagram](https://www.instagram.com/gabrielalmeidadsg/).
