@@ -31,6 +31,7 @@ e enviar mandar uma DM.
 Você pode:
 
 * fazer uma transferência bancária
+* boleto
 * pagar com o cartão de crédito pelo Picpay (crie uma conta [aqui](http://www.picpay.com/convite?PETALG))
 
 Enviaremos todos os dados detalhes no momento do pagamento. Após efetuar o pagamento,
