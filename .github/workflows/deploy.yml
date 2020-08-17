@@ -1,8 +1,8 @@
 name: Trigger Netlify Build
 on:
   schedule:
-    # Runs every day
-    - cron: '* * */1 * *'
+    # At the end of every day
+    - cron: '0 0 * * *'
 jobs:
   build:
     name: Request Netlify Webhook
